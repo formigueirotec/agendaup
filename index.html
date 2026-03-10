@@ -23,6 +23,15 @@
             background-color: #000;
         }
 
+        #bg{
+            background-image: url("54987709272_f3f5ec4fc2_k.jpg");
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            filter: grayscale(100);
+            opacity: 25%;
+        }
+
         .container {
             width: 900px;
             height: 700px;
@@ -33,7 +42,11 @@
             justify-content: center;
             align-items: center;
 
-            background-color: #333;
+            background-color: #3338;
+            backdrop-filter: blur(5px);
+            box-shadow: inset 0px 20px 20px -20px #0008;
+
+            z-index: 1;
 
             & h2 {
                 padding: 25px;
@@ -50,6 +63,7 @@
 </head>
 
 <body>
+    <div id="bg"></div>
     <div class="container">
         <h2>Calendário sede da Unidade Popular</h2>
         <iframe
