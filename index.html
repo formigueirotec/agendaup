@@ -16,6 +16,7 @@
 
         body {
             display: flex;
+            flex-direction: column;
             height: 100vh;
             justify-content: center;
             align-items: center;
@@ -60,10 +61,29 @@
             }
         }
 
+        img {
+            position: absolute;
+            bottom: 25px;
+            left: 25px;
+            z-index: 1;
+        }
+
+        h3{
+            text-align: right;
+            color: #fff;
+            position: absolute;
+            bottom: 25px;
+            right: 25px;
+
+            z-index: 1;
+        }
+
         @media (max-width: 1024px) {
+
             .container {
                 width: 90%;
                 height: 80%;
+                margin-bottom: 100px;
             }
         }
     </style>
@@ -77,6 +97,8 @@
             src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FSao_Paulo&showPrint=0&showTabs=0&showDate=0&showNav=0&showTitle=0&showCalendars=0&showTz=0&hl=pt_BR&mode=WEEK&src=ODZkMWJjN2M2ODNmZGU1NTFhY2Q1OTBhOTE1NTJjZTY0NDc0YmRjZmZjNDIyMzA3MjI4MDA1MWNiZGI1MTEzY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23616161"
             style="border-width:0" frameborder="0" scrolling="no"></iframe>
     </div>
+    <a href="https://unidadepopular.org.br/" target="_blank"><img src="UP.png" alt="" style="height: 50px;"></a>
+    <a href="http://" target="_blank"><h3>Feito pelo<br>Núcleo de TI - MLC DF</h3></a>
 </body>
 
 </html>
