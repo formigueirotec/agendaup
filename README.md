@@ -14,10 +14,11 @@ Uma página web minimalista e responsiva que exibe o calendário semanal do Goog
 
 ```
 .
-├── index.html           # Arquivo principal da aplicação
-├── UP.png               # Logo da Unidade Popular (versão clara, usada no rodapé e favicon em modo escuro)
-├── Logo UP Preto.png    # Logo da Unidade Popular (versão escura, usada como favicon padrão)
-└── 54987709272_f3f5ec4fc2_k.jpg  # Imagem de fundo
+├── index.html                        # Estrutura HTML da aplicação
+├── style.css                         # Estilização da página
+├── UP.png                            # Logo da UP (versão clara — rodapé e favicon em modo escuro)
+├── Logo UP Preto.png                 # Logo da UP (versão escura — favicon padrão)
+└── 54987709272_f3f5ec4fc2_k.jpg     # Imagem de fundo
 ```
 
 ---
@@ -40,7 +41,12 @@ Uma página web minimalista e responsiva que exibe o calendário semanal do Goog
 Por ser uma aplicação puramente estática (HTML + CSS), não requer instalação de dependências ou servidor de build.
 
 1. **Clone ou baixe** este repositório.
-2. Certifique-se de que todos os arquivos de mídia (`UP.png`, `Logo UP Preto.png`, `54987709272_f3f5ec4fc2_k.jpg`) estejam na mesma pasta que o `index.html`.
+2. Certifique-se de que todos os arquivos estejam na mesma pasta:
+   - `index.html`
+   - `style.css`
+   - `UP.png`
+   - `Logo UP Preto.png`
+   - `54987709272_f3f5ec4fc2_k.jpg`
 3. Abra o `index.html` em qualquer navegador moderno.
 
 > ⚠️ O calendário é carregado via `<iframe>` do Google Calendar e requer conexão com a internet para ser exibido.
@@ -66,7 +72,7 @@ Para obter a URL: **Google Calendar → Configurações do calendário → Integ
 
 ### Trocar a imagem de fundo
 
-Substitua o arquivo `54987709272_f3f5ec4fc2_k.jpg` pela imagem desejada e atualize a referência no CSS:
+Substitua o arquivo `54987709272_f3f5ec4fc2_k.jpg` pela imagem desejada e atualize a referência no `style.css`:
 
 ```css
 #bg {
@@ -80,8 +86,8 @@ Substitua o arquivo `54987709272_f3f5ec4fc2_k.jpg` pela imagem desejada e atuali
 
 | Tecnologia | Uso |
 |---|---|
-| HTML5 | Estrutura da página |
-| CSS3 | Estilização, glassmorphism, responsividade |
+| HTML5 | Estrutura da página (`index.html`) |
+| CSS3 | Estilização, glassmorphism, responsividade (`style.css`) |
 | Google Calendar Embed | Exibição do calendário |
 
 ---
